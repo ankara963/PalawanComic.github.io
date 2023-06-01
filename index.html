@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Tales of Tagbanua</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        button{
+            width: 100px;
+            background-color: rgb(255, 123, 0);
+            border: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 5px;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px black;
+        }
+
+        button:hover{
+            background-color: inherit;
+            box-shadow: none;
+            transform: scale(.90);
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(0, 139, 253) ">
+    
+    <button id="openModalButton">About</button>
+    <div class="herocontainer">
+        <h1>The Three Tales of Tagbanua</h1>
+        <p>Stories which showcasing the lifestyle and culture in Palawan</p>
+        <a href="story.html"><button>Read the Story</button></a>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <h5>Project Owners</h5>
+          <p>Doren Nicole Grander</p>
+          <p>Daisy Bagares</p>
+          <p>Aaron Giatan</p>
+          <p>Nicole Silladora</p>
+          <p>Kathleen Joy Ytac</p>
+        </div>
+      </div>
+      
+    <script>
+        // Get the modal element
+var modal = document.getElementById("myModal");
+
+// Get the close button element
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Open the modal when a certain element is clicked
+var openBtn = document.getElementById("openModalButton");
+openBtn.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+// Close the modal when the user clicks outside of it
+window.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
